@@ -1,0 +1,272 @@
+body{
+	margin: 0;
+	font-family: sans-serif;
+}
+
+h6{
+	font-family: cursive;
+	font-weight: bold;
+	font-size: 15px;
+}
+
+h5 {
+	font-size: 25px;
+	font-weight: normal;
+}
+
+button{
+	border-radius: 50px;
+	width: 120px;
+ 	height: 35px;
+ 	color: #CCA07C;
+ 	background-color: #E6E6E6;
+ 	border-color: #CCA07C;
+ 	border-style: solid;
+}
+
+button:hover{
+	color: #E6E6E6;
+ 	background-color: #CCA07C;
+}
+
+header{
+	display: flex;
+	flex-direction: row;
+	border-bottom-style: solid;
+	justify-content: space-arround;
+	align-items: center;
+	background-color: #FFE1C9;
+	position: fixed;
+	top: 0;
+	left: 0;
+	right: 0;
+}
+.usuario{
+	height: 50px;
+	margin-right: 60px;
+}
+.logo{
+	height: 100px;
+	margin-top: -20px;
+	margin-bottom: -20px;
+	margin-left: 20px;
+	margin-right: 50px;
+
+}
+.botones{
+	display: flex;
+	flex-direction: row;
+	flex-grow: 1;
+	align-content: left;
+	gap: 25px;
+}
+
+.box1 a{
+	color: black;
+	padding-bottom: 10px;
+	text-decoration: none;
+	text-align: center;
+}
+
+.box1 a:hover{
+	border-bottom-style: solid;
+	color: #9FAD8E;
+}
+
+.box2{
+	padding-left: 10%;
+	background-image: url("./img/panoramicdish.jpg");
+	background-repeat: no-repeat;
+	background-size: cover;
+	padding-top: 170px;
+	padding-bottom: 150px;
+}
+.categories{
+	display: flex;
+	flex-direction: row;
+	border-bottom-style: solid;
+	border-width: 1px;
+	justify-content: space-arround;
+	align-items: center;
+	padding: 10px;
+	left: 0;
+	right: 0;
+	gap: 35px;
+	padding-left: 5%;
+	padding-bottom: 10px;
+}
+.grey{
+	color: gray;
+}
+.box3{
+	font-weight: bold;
+}
+.box3 a{
+	color: black;
+	text-decoration: none;
+}
+.box3 a:hover{
+	border-bottom-style: solid;
+	padding-bottom: 5px;
+}
+
+
+.lastrecipies{
+	margin-left: 5%;
+	margin-right: 5%;
+
+}
+.lastrecipies h2{
+	padding-left: 5%;
+}
+.recipies{
+	display: flex;
+	flex-direction: row;
+	gap: 60px;
+	display: flex;
+	justify-content: center;
+}
+.recipies h5{
+	margin-top: 23px;
+	margin-bottom: 0px;
+}
+.recipies h6{
+	margin-top: 5px;
+	margin-bottom: 15px;
+}
+.box4{
+	display: flex;
+	flex-direction: column;
+	max-width: 450px;
+}
+
+
+.nevermiss{
+	display: flex;
+	background-color: #BD8C71;
+	justify-content: space-between;
+	margin: 5%;
+	padding: 5%;
+	border-radius: 50px;
+	align-items: center;
+	flex-direction: row;
+	column-gap: 20px;
+}
+.nevermiss h5{
+	margin-top: 23px;
+	margin-bottom: 0px;
+}
+.box5{
+	display: flex;
+	justify-content: center;             
+	align-items: center;
+}
+.box5 button{
+ 	color: black;
+ 	background-color: #FFE1C9;
+ 	border-color: #FFE1C9;
+ 	border-style: solid;
+}
+.box5 button:hover{ /*Terminar de superponer el boton y el input*/
+	color: #E6E6E6;
+ 	background-color: #BD8C71;
+}
+input{
+	border-radius: 50px;
+ 	height: 35px;
+ 	width: 300px;
+ 	background-color: #BD8C71;
+ 	border-color: #FFE1C9;
+ 	border-style: solid;
+
+}
+::placeholder{
+	color: black;
+	opacity: 1;
+	padding-left: 10px;
+}
+
+/*acabar de arreglar*/
+.popular{
+	display: flex;
+	flex-direction: row;
+	padding: 5%;
+	justify-content: center;
+	gap: 60px;
+
+}
+.box6{
+	background-image: url("./img/image.jpeg");
+	height: 300px;
+	width: 300px;
+	padding: 50px;
+	background-repeat: no-repeat;
+	background-size: cover;
+}
+.mostpopular h2{
+	padding-left: 5%
+}
+
+article{
+	display: flex;
+	background-color: #C7AD9F;
+	border: solid;
+	border-color: #A39083;
+	align-items: center;
+	gap: 60px;
+}
+.box7 h2{
+	font-size: 50px;
+	margin-top: 5px;
+	margin-bottom: 5px;
+}
+.box7 h6{
+	margin-bottom: 5px;
+}
+.box7 p{
+	margin-right: 150px;
+}
+
+.logo{
+	height: 100px;
+	margin-left: 20px;
+	margin-right: 50px;
+
+
+}
+footer{
+	border-top-style: solid;
+	background-color: #FFE1C9;
+	align-items: center;
+	left: 0;
+	right: 0;
+	padding-bottom: 50px;
+	padding-top: 50px;
+}
+.footer div{
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+	gap: 15px;
+
+}
+.logo2{
+	height: 100px;
+	margin-left: 8%;
+}
+}
+.box8{
+	display: flex;
+	flex-direction: row;
+	justify-content: space-evenly;
+	align-items: center;
+}
+.box10 img{
+	height: 30px;
+}
+.box10{
+	margin-right: 5%;
+}
+.box9{
+	margin-left: 10%;
+}
