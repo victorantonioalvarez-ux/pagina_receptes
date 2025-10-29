@@ -51,7 +51,6 @@ header{
 	margin-bottom: -20px;
 	margin-left: 20px;
 	margin-right: 50px;
-
 }
 .botones{
 	display: flex;
@@ -60,6 +59,7 @@ header{
 	align-content: left;
 	gap: 25px;
 }
+
 
 .box1 a{
 	color: black;
@@ -78,6 +78,8 @@ header{
 	background-image: url("./img/panoramicdish.jpg");
 	background-repeat: no-repeat;
 	background-size: cover;
+	max-width: 100%;
+	height: auto;
 	padding-top: 170px;
 	padding-bottom: 150px;
 }
@@ -95,7 +97,7 @@ header{
 	padding-left: 5%;
 	padding-bottom: 10px;
 }
-.grey{
+.gray{
 	color: gray;
 }
 .box3{
@@ -113,18 +115,13 @@ header{
 
 .lastrecipies{
 	margin-left: 5%;
-	margin-right: 5%;
-
-}
-.lastrecipies h2{
-	padding-left: 5%;
 }
 .recipies{
 	display: flex;
-	flex-direction: row;
+	justify-content: space-between;
 	gap: 60px;
-	display: flex;
-	justify-content: center;
+	margin-right: 5%;
+
 }
 .recipies h5{
 	margin-top: 23px;
@@ -134,17 +131,16 @@ header{
 	margin-top: 5px;
 	margin-bottom: 15px;
 }
-.box4{
-	display: flex;
-	flex-direction: column;
-	max-width: 450px;
-}
 
+.box4 img{
+	max-width: 100%;
+	height: auto;
+}
 
 .nevermiss{
 	display: flex;
 	background-color: #BD8C71;
-	justify-content: space-between;
+	justify-content: space-evenly;
 	margin: 5%;
 	padding: 5%;
 	border-radius: 50px;
@@ -166,14 +162,15 @@ header{
  	background-color: #FFE1C9;
  	border-color: #FFE1C9;
  	border-style: solid;
+ 	margin-left: -125px;
 }
-.box5 button:hover{ /*Terminar de superponer el boton y el input*/
+.box5 button:hover{
 	color: #E6E6E6;
  	background-color: #BD8C71;
 }
 input{
 	border-radius: 50px;
- 	height: 35px;
+ 	height: 33px;
  	width: 300px;
  	background-color: #BD8C71;
  	border-color: #FFE1C9;
@@ -183,37 +180,77 @@ input{
 ::placeholder{
 	color: black;
 	opacity: 1;
-	padding-left: 10px;
+	padding-left: 15px;
 }
 
-/*acabar de arreglar*/
+
+.mostpopular h2{
+	padding-left: 5%
+}
 .popular{
 	display: flex;
 	flex-direction: row;
 	padding: 5%;
-	justify-content: center;
+	justify-content: space-evenly;
 	gap: 60px;
 
 }
-.box6{
+.popular h6{
+	padding-top: 95%;
+	margin-bottom: 0px;
+}
+
+.popular h5{
+	margin-bottom: 5px;
+	margin-top: 0px;
+}
+.imagen1{
 	background-image: url("./img/image.jpeg");
-	height: 300px;
-	width: 300px;
-	padding: 50px;
+	width: 40%;
+	height: auto;
 	background-repeat: no-repeat;
+	background-position: center;
 	background-size: cover;
+	padding-left: 10px;
 }
-.mostpopular h2{
-	padding-left: 5%
+.imagen2{
+	background-image: url("./img/image.jpeg");
+	width: 40%;
+	height: auto;
+	background-repeat: no-repeat;
+	background-position: center;
+	background-size: cover;
+	padding-left: 10px;
 }
+.imagen3{
+	background-image: url("./img/image.jpeg");
+	width: 40%;
+	height: auto;
+	background-repeat: no-repeat;
+	background-position: center;
+	background-size: cover;
+	padding-left: 10px;
+}
+.imagen4{
+	background-image: url("./img/image.jpeg");
+	width: 40%;
+	height: auto;
+	background-repeat: no-repeat;
+	background-position: center;
+	background-size: cover;
+	padding-left: 10px;
+}
+
 
 article{
 	display: flex;
 	background-color: #C7AD9F;
+	justify-content: space-evenly;
 	border: solid;
 	border-color: #A39083;
 	align-items: center;
-	gap: 60px;
+	gap: 15%;
+	padding-left: 7%;
 }
 .box7 h2{
 	font-size: 50px;
@@ -224,8 +261,9 @@ article{
 	margin-bottom: 5px;
 }
 .box7 p{
-	margin-right: 150px;
+	margin-right: 15%;
 }
+
 
 .logo{
 	height: 100px;
