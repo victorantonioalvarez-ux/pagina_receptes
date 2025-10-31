@@ -60,7 +60,17 @@ header{
 	gap: 25px;
 }
 
-
+@media (max-width: 850px){
+	.botones{
+		display: none;
+	}
+	header{
+		justify-content: space-between;
+	}
+	.usuario{
+		flex-grow: 1;
+	}
+}
 .box1 a{
 	color: black;
 	padding-bottom: 10px;
@@ -73,17 +83,26 @@ header{
 	color: #9FAD8E;
 }
 
+
 .box2{
 	padding-left: 10%;
-	background-image: url("./img/panoramicdish.jpg");
+	background-image: url("./img/orange.jpg");
 	background-repeat: no-repeat;
 	background-size: cover;
 	max-width: 100%;
 	height: auto;
+	width: auto;
 	padding-top: 170px;
 	padding-bottom: 150px;
 }
-.categories{
+.box2 h6{
+	margin-bottom: 10px;
+}
+.box2 h1{
+	margin-top: -20px;
+}
+
+.categories1{
 	display: flex;
 	flex-direction: row;
 	border-bottom-style: solid;
@@ -111,7 +130,35 @@ header{
 	border-bottom-style: solid;
 	padding-bottom: 5px;
 }
-
+@media (min-width: 850px){
+	.categories2{
+		display: none;
+	}
+}
+@media (max-width: 850px){
+	.categories1{
+		display: none;
+	}
+	.categories2{
+		display: flex;
+		flex-direction: column;
+		border-bottom-style: solid;
+		border-width: 1px;
+		justify-content: space-arround;
+		align-items: center;
+		padding: 10px;
+		left: 0;
+		right: 0;
+		gap: 25px;
+		padding-left: 5%;
+		padding-bottom: 10px;
+	}
+	.caja1{
+		display: flex;
+		flex-direction: row;
+		column-gap: 18px;
+	}
+}
 
 .lastrecipies{
 	margin-left: 5%;
@@ -136,6 +183,12 @@ header{
 	max-width: 100%;
 	height: auto;
 }
+@media (max-width: 850px){
+	.recipies{
+		flex-direction: column;
+	}
+}
+
 
 .nevermiss{
 	display: flex;
@@ -182,7 +235,16 @@ input{
 	opacity: 1;
 	padding-left: 15px;
 }
-
+@media (max-width: 850px){
+	.nevermiss{
+		flex-direction: column;
+	}
+	input{
+	border-radius: 50px;
+ 	height: 33px;
+ 	width: 250px;
+	}
+}
 
 .mostpopular h2{
 	padding-left: 5%
@@ -240,7 +302,24 @@ input{
 	background-size: cover;
 	padding-left: 10px;
 }
-
+@media (max-width: 850px){
+	.popular{
+		flex-direction: column;
+		justify-content: center;
+	}
+	.imagen1{
+		width: auto;
+	}
+	.imagen2{
+		width: auto;
+	}
+	.imagen3{
+		width: auto;
+	}
+	.imagen4{
+		width: auto;
+	}
+}
 
 article{
 	display: flex;
@@ -251,6 +330,10 @@ article{
 	align-items: center;
 	gap: 15%;
 	padding-left: 7%;
+}
+
+.jhondoe{
+	max-width: 60%;
 }
 .box7 h2{
 	font-size: 50px;
@@ -263,15 +346,19 @@ article{
 .box7 p{
 	margin-right: 15%;
 }
+@media (max-width: 850px){
 
-
-.logo{
-	height: 100px;
-	margin-left: 20px;
-	margin-right: 50px;
-
-
+	article{
+		flex-direction: column;
+	}
+	.box7{
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+	}
 }
+
+
 footer{
 	border-top-style: solid;
 	background-color: #FFE1C9;
@@ -292,6 +379,10 @@ footer{
 	height: 100px;
 	margin-left: 8%;
 }
+.logo{
+	height: 100px;
+	margin-left: 20px;
+	margin-right: 50px;
 }
 .box8{
 	display: flex;
