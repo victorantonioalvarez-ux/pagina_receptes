@@ -17,7 +17,7 @@ h5 {
 button{
 	border-radius: 50px;
 	width: 120px;
- 	height: 35px;
+ 	height: 39px;
  	color: #CCA07C;
  	background-color: #E6E6E6;
  	border-color: #CCA07C;
@@ -127,8 +127,7 @@ header{
 	text-decoration: none;
 }
 .box3 a:hover{
-	border-bottom-style: solid;
-	padding-bottom: 5px;
+	color: darkgray;
 }
 @media (min-width: 850px){
 	.categories2{
@@ -155,8 +154,16 @@ header{
 	}
 	.caja1{
 		display: flex;
+		justify-content: center;
 		flex-direction: row;
 		column-gap: 18px;
+		padding-bottom: 15px;
+	}
+	.box3 {
+		display: flex;
+		flex-direction: column;
+		text-align: center;
+		gap: 30px;
 	}
 }
 
@@ -215,7 +222,7 @@ header{
  	background-color: #FFE1C9;
  	border-color: #FFE1C9;
  	border-style: solid;
- 	margin-left: -125px;
+ 	margin-left: -120px;
 }
 .box5 button:hover{
 	color: #E6E6E6;
@@ -368,13 +375,7 @@ footer{
 	padding-bottom: 50px;
 	padding-top: 50px;
 }
-.footer div{
-	display: flex;
-	flex-direction: row;
-	justify-content: space-between;
-	gap: 15px;
 
-}
 .logo2{
 	height: 100px;
 	margin-left: 8%;
@@ -386,8 +387,8 @@ footer{
 }
 .box8{
 	display: flex;
+	justify-content: space-between;
 	flex-direction: row;
-	justify-content: space-evenly;
 	align-items: center;
 }
 .box10 img{
@@ -398,4 +399,42 @@ footer{
 }
 .box9{
 	margin-left: 10%;
+	display: flex;
+	flex-direction: row;
+	justify-content: space-evenly;
+	align-items: left;
+	gap: 15px;
+}
+@media (max-width: 850px){
+	.box9{
+		flex-direction: column;
+		margin-left: 0px;
+		row-gap: 30px;
+		
+	}
+	.box8{
+		display: flex;
+		flex-direction: column;
+
+	}
+	.box10{
+		margin-right: 0%;
+		margin-top: 25px;
+	}
+	.caja2{
+		display: flex;
+		justify-content: center;
+		margin-left: -35px;
+	}
+	.box1 a{
+		color: black;
+		padding-top: 10px;
+		padding-bottom: 10px;
+		padding-left: 15px;
+	}
+	.box1 a:hover{
+		border-left-style: solid;
+		color: #9FAD8E;
+		border-bottom-style: none;
+		padding-left: 12px;
 }
